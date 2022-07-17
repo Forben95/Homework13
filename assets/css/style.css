@@ -1,0 +1,139 @@
+
+* {
+    font-family: 'Noto Serif', serif
+}
+
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "area1"
+                         "area2"
+                         "area3"
+                         "area4"
+                         "area5";
+
+}
+
+.area1 {
+    grid-area: area1;
+}
+
+.area2 {
+    grid-area: area2;
+    margin-top: -15px;
+
+}
+
+.area3 {
+    grid-area: area3;
+}
+
+.area4 {
+    grid-area: area4;
+}
+
+.area5 {
+    grid-area: area5;
+}
+
+.foto1 {
+    background-image: url(https://images.unsplash.com/photo-1591561954555-607968c989ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGFuZGJhZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px 0px;
+    line-height: 1.5;
+}
+
+.foto2 {
+    background-image: url(https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px 0px;
+    line-height: 1.5;
+}
+
+.foto3 {
+    background-image: url(https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px 0px;
+    line-height: 1.5;
+}
+
+.card {
+    border: none;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.story {
+    display: grid;  
+    gap:15px;
+    grid-template-columns: repeat(2, auto);
+}
+
+.call {
+    display: grid;
+    line-height: 0.7;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+.info {
+    text-align: center;
+    gap: 15px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+@media (min-width: 950px) {
+    span {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    
+    .grid {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "area1 area1 area1"
+                             "area2 area2 area2"
+                             "area3 area4 area5";
+    
+    }
+    .story {
+        display: grid;  
+        gap: 32px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .call {
+        display: grid;
+        line-height: 0.7;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+    .info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .area2 {
+        margin-bottom: 15px;
+    }
+}
